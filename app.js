@@ -89,6 +89,8 @@ const weatherComTranslate = (weather) => {
   switch (weather) {
     case "Orta":
       return "Az Bulutlu";
+    case "Mostly Cloudy":
+      return "Çoğunlukla Bulutlu";
     case "Mostly Clear Night":
       return "Az Bulutlu";
     case "Partly Cloudy":
