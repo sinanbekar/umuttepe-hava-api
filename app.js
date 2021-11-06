@@ -32,7 +32,7 @@ app.get("/api/m3u8", (req, res) => {
         req.protocol + "://" + req.get("host") + req.originalUrl
       );
       m3u8Url.hostname = currentUrl.hostname;
-      m3u8Url.protocol = currentUrl.protocol;
+      m3u8Url.protocol = process.env.NODE_ENV === "production" ? "https": "http";
       if (process.env.NODE_ENV !== "production") {
         m3u8Url.port = app.get("port");
       }
