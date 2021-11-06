@@ -1,6 +1,10 @@
 {
   "name": "umuttepe-hava-api",
   "packageManager": "yarn@3.0.2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
   "dependencies": {
     "cherio": "^1.0.0-rc.2",
     "cookie-parser": "^1.4.5",
